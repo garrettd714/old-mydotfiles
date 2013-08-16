@@ -1,13 +1,15 @@
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-export BUNDLER_EDITOR=vim
-export EDITOR=vim
+# export BUNDLER_EDITOR=vim
+# export EDITOR=vim
+export BUNDLER_EDITOR='subl -w'
+export EDITOR='subl -w'
 export SHELL=bash
 
-if [[ "$TERM" != "screen-256color" ]]
-then
-    tmux attach-session -t "$USER" || tmux new-session -s "$USER"
-    exit
-fi
+#if [[ "$TERM" != "screen-256color" ]]
+#then
+#    tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+#    exit
+#fi
 
 source "$HOME/.git-completion.bash"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
@@ -20,3 +22,4 @@ alias ll='ls -l'
 alias search=grep
 alias ..='cd ..'
 alias ...='cd ../..'
+alias be='bundle exec'

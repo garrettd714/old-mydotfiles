@@ -41,3 +41,5 @@
 	recentrepo = /Users/garrettdavis/Developer/enigmas
 	recentrepo = /Users/garrettdavis/Developer/cipher
 	geometry = 876x451+457+245 194 203
+[mergetool]
+	keepBackup = true
